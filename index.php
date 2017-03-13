@@ -35,13 +35,13 @@
 	?>
 	<div class="container-fluid back-dark" id="nav-container">
 		<div class="row">
-			<div class="col-xs-6">
+			<div class="col-xs-5 col-sm-5 col-md-6">
 				<a href="#" class="color-white">
 					<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
 					Вернуться и посмотреть
 				</a>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-xs-7 col-sm-7 col-md-6">
 				<a href="#" class="color-white pull-right">
 					Узнать как съэкономить на доставке
 					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -66,7 +66,7 @@
 					<div class="hidden-xs hidden-sm col-md-3" id="timer-img">
 						<img src="/image/timer.png" alt="">
 					</div>
-					<div class="clock col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-9" style="margin:2em;"></div>
+					<div class="clock col-md-9"></div>
 				</div>
 			</div>
 		</div>
@@ -155,7 +155,7 @@
 						<div class="col-xs-12 col-sm-12 col-md-6 goods-description-block">
 							<h2 class="font-bold"><?php echo $good['good_name'];?></h2>
 							<p><?php echo $good['good_description'];?></p>
-							<button class="btn btn-warning btn-lg" data-good-id="<?php echo $good['good_id'];?>">Добавить к заказу</button>
+							<button class="btn btn-warning btn-lg add-to-order" data-good-id="<?php echo $good['good_id'];?>">Добавить к заказу</button>
 						</div>
 					</div>
 				<?php } ?>

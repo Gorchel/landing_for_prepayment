@@ -32,4 +32,12 @@ $(document).ready(function() {
 
     	main_img.attr('src',this_src);
     })
+
+    $('body').on('click','.add-to-order',function(){
+    	var data_good_id = $(this).data('good-id');
+    	$(this).removeClass('btn-warning').addClass('btn-success').html('Товар добавлен').prop('disabled',true);
+
+    	alert('Событие добавления товара №' + data_good_id);
+    });
+
 });

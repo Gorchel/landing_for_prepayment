@@ -19,10 +19,31 @@ a:hover {
 	color: red;
 }
 
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	#nav-container a {
+		font-size: 14px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width:577px) and (max-width: 767px) {
+	#nav-container a {
+		font-size: 10px;
+	}
+}
+
+@media(max-width:576px){
+	#nav-container a {
+		font-size: 10px;
+	}
+}
+
+
 #congratulation-container {
 	border: 2px solid #e6e6e6;
 	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	padding: 30px;
 }
 
@@ -46,8 +67,9 @@ a:hover {
 }
 
 .clock {
-	margin: 10px 0px 0px 0px !important;
   	max-width: 75% !important;
+  	margin: 0px !important;
+  	padding-top: 10px;
 }
 
 /* Large desktops and laptops */
@@ -72,13 +94,32 @@ a:hover {
 		zoom: 0.7;
 	  	-moz-transform: scale(0.7);
 	}
+
+	.clock {
+		left: 27%;
+	}
 }
 
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+@media (min-width:577px) and (max-width: 767px) {
 	.clock {
 		zoom: 0.6;
 	  	-moz-transform: scale(0.6);
+	}
+
+	.clock {
+		left: 15%;
+	}
+}
+
+@media(max-width:576px){
+	.clock {
+		zoom: 0.5;
+	  	-moz-transform: scale(0.5);
+	}
+
+	.clock {
+		left: 17%;
 	}
 }
 
